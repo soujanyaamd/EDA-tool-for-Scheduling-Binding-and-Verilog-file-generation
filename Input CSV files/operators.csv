@@ -1,0 +1,6 @@
+TYPE OF OP,NUM OF UNITS,TIME REQUIRED IN NANO SECONDS
+Add/Sub,2,1
+Sq,1,2
+Sqrt,1,4
+Mul/Div,1,3
+taninv,2,4
