@@ -1,0 +1,22 @@
+SERIAL NUM,OPERATOR,INPUT 1,TYPE 1,NATURE1,BITS 1,INPUT 2,TYPE 2,NATURE2,BITS 2,OUTPUT,BITS OP,OPERATION
+1,Add/Sub,acc_x,ind,var,7,adj1,ind,const,7,acc_x1,8,+
+2,Mul/Div,acc_x1,dep,var,8,para1,ind,const,8,acc_x2,17,/
+3,Sq,acc_x2,dep,var,17,NIL,NIL,NIL,NIL,acc_sq_x,35,sq
+4,Add/Sub,acc_y,ind,var,7,adj2,ind,const,7,acc_y1,8,+
+5,Mul/Div,acc_y1,dep,var,8,para2,ind,const,8,acc_y2,17,/
+6,Sq,acc_y2,dep,var,17,NIL,NIL,NIL,NIL,acc_sq_y,35,sq
+7,Add/Sub,acc_z,ind,var,7,adj3,ind,const,7,acc_z1,8,+
+8,Mul/Div,acc_z1,dep,var,8,para3,ind,const,8,acc_z2,17,/
+9,Sq,acc_z2,dep,var,17,NIL,NIL,NIL,NIL,acc_sq_z,35,sq
+10,Add/Sub,acc_sq_y,dep,var,35,acc_sq_z,dep,var,35,pitch1,36,-
+11,Sqrt,pitch1,dep,var,36,NIL,NIL,NIL,NIL,pitch2,72,sqrt
+12,Mul/Div,pitch2,dep,var,72,acc_x2,dep,var,17,pitch3,72,*
+13,taninv,pitch3,dep,var,72,NIL,NIL,NIL,NIL,pitch,64,atan
+14,Add/Sub,acc_sq_x,dep,var,35,acc_sq_y,dep,var,35,yaw1,36,-
+15,Sqrt,yaw1,dep,var,36,NIL,NIL,NIL,NIL,yaw2,72,sqrt
+16,Mul/Div,yaw2,dep,var,72,acc_z2,dep,var,17,yaw3,72,*
+17,taninv,yaw3,dep,var,72,NIL,NIL,NIL,NIL,yaw,64,atan
+18,Add/Sub,acc_sq_z,dep,var,35,acc_sq_x,dep,var,35,roll1,36,-
+19,Sqrt,roll1,dep,var,36,NIL,NIL,NIL,NIL,roll2,72,sqrt
+20,Mul/Div,roll2,dep,var,72,acc_y2,dep,var,17,roll3,72,*
+21,taninv,roll3,dep,var,72,NIL,NIL,NIL,NIL,roll,64,atan
