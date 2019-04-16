@@ -7,9 +7,9 @@ As an example, the series of steps in the process of obtaining Pitch, Yaw and Ro
 
 The equations for the conversion are as follows:
 
-acc_x=((acc_x-thresh1)/adjustment-factor1) <br/>
-acc_y=((acc_y-thresh2)/adjustment-factor2) <br/>
-acc_z=((acc_z-thresh3)/adjustment-factor3) <br/>
+acc_x = ((acc_x-thresh1)/adjustment-factor1) <br/>
+acc_y = ((acc_y-thresh2)/adjustment-factor2) <br/>
+acc_z = ((acc_z-thresh3)/adjustment-factor3) <br/>
 
 pitch = atan(acc_x,sqrt(sq(acc_y)+sq(acc_z))) <br/>
 yaw = atan(acc_z,sqrt(sq(acc_x)+sq(acc_y))) <br/>
