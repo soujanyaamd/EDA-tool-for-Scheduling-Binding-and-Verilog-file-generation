@@ -1,0 +1,7 @@
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+============ RESTART: C:\Users\Soujanya\Desktop\AVD_SS\avdss_2.py ============
+Time Slot List [[0], [1, 4, 7], [2, 5, 8], [3, 6, 9], [10, 14, 18], [11, 15, 19], [12, 16, 20], [13, 17, 21]]
+ASAP LIST [0, 1, 2, 3, 1, 2, 3, 1, 2, 3, 4, 5, 6, 7, 4, 5, 6, 7, 4, 5, 6, 7]
+>>> 
