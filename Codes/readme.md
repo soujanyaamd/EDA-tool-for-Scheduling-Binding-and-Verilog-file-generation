@@ -17,4 +17,8 @@ This code outputs the Time Slot List considering the Resource Constrains.
 This code outputs the final Scheduling and Binding solution.
 The operations performed in each time slot, the hardware it is bound to and the time required for each time slot is printed.
 
-### 4. avdss_
+### 4. avdss_9.py
+This code generates a simulatable verilog .v file along with the scheduling and binding solution.
+
+### 5. avdss_10.py
+This is same as avdss_9.py, but generates a Scheduling and Binding Solution and a verilog file based on the constraints given in operators1.csv
